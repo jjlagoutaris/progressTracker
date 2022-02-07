@@ -19,15 +19,32 @@ h1{
 div{
     font-size: 2rem;
 }
-ul{
+.fundamentals{
     font-size: 2rem;
+    background-color: #A9AFF5;
+    border: 2px solid black;
+    margin: 10px 0;
+}
+ul, .fullstackJS{
+    margin: 10px 0;
+    font-size: 2rem;
+    background-color: #F7DDB4;
+    border: 2px solid black;
+}
+ul{
     list-style-type: none;
     padding: 0 2rem;
-    margin: 10px 0;
 }
 li{
     margin: 10px;
 }
 div{
     margin: 10px;
+}
+.total{
+    margin: 10px 0;
+    font-size: 2rem;
+    background-color: #F7DDB4;
+    border: 5px solid black;
+    border-radius: 25%;
 }
