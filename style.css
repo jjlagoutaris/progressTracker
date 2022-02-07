@@ -1,0 +1,33 @@
+body{
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CBC8FD;
+}
+.container{
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 10px 10px;
+    padding: 25px;
+}
+h1{
+    font-size: 4rem;
+}
+div{
+    font-size: 2rem;
+}
+ul{
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0 2rem;
+    margin: 10px 0;
+}
+li{
+    margin: 10px;
+}
+div{
+    margin: 10px;
+}
