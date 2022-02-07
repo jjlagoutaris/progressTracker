@@ -19,28 +19,39 @@ const FullStackJSCompleted = intermediateHTMLandCSSCompleted + JSCompleted +
 
 const totalCompleted = fundamentalsCompleted + FullStackJSCompleted;
 const totalLessons = totalFundamentals + totalFullStackJS;
+const totalRemaining = totalLessons - totalCompleted;
 
 
 
 const fundamentals = document.querySelector('.fundamentals');
 fundamentals.textContent += `${fundamentalsCompleted}/${totalFundamentals} 
 (${(fundamentalsCompleted/totalFundamentals).toFixed(3)*100}%)`;
+
 const fullstackJS = document.querySelector('.fullstackJS');
 fullstackJS.textContent += `${FullStackJSCompleted}/${totalFullStackJS} 
 (${(FullStackJSCompleted/totalFullStackJS).toFixed(3)*100}%)`;
+
 const intermediateHTMLandCSS = document.querySelector('.li1');
 intermediateHTMLandCSS.textContent += `${intermediateHTMLandCSSCompleted}/${totalIntermediateHTMLandCSSLessons} 
 (${(intermediateHTMLandCSSCompleted/totalIntermediateHTMLandCSSLessons).toFixed(3)*100}%)`;
+
 const JavaScript = document.querySelector('.li2');
 JavaScript.textContent += `${JSCompleted}/${totalJS} (${(JSCompleted/totalJS).toFixed(3)*100}%)`;
+
 const advancedHTMLandCSS = document.querySelector('.li3');
 advancedHTMLandCSS.textContent += `${advancedHTMLandCSSCompleted}/${totalAdvancedHTMLandCSS} 
 (${(advancedHTMLandCSSCompleted/totalAdvancedHTMLandCSS).toFixed(3)*100}%)`;
+
 const nodeJS = document.querySelector('.li4');
 nodeJS.textContent += `${nodeJSCompleted}/${totalNodeJS} 
 (${(nodeJSCompleted/totalNodeJS).toFixed(3)*100}%)`;
+
 const gettingHired = document.querySelector('.li5');
 gettingHired.textContent += `${gettingHiredCompleted}/${totalGettingHired} 
 (${(gettingHiredCompleted/totalGettingHired).toFixed(3)*100}%)`;
+
 const total = document.querySelector('.total');
 total.textContent += `${totalCompleted}/${totalLessons} (${(totalCompleted/totalLessons).toFixed(3)*100}%)`;
+
+const daysLeft = document.querySelector('.days-left');
+daysLeft.textContent += `Approximately ${(totalRemaining / 2).toFixed(0)} days left (2/d)`;

@@ -41,7 +41,7 @@ li{
 div{
     margin: 10px;
 }
-.total{
+.total, .days-left{
     margin: 10px 0;
     font-size: 2rem;
     background-color: #F7DDB4;
