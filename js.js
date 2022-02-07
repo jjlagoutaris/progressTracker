@@ -25,33 +25,33 @@ const totalRemaining = totalLessons - totalCompleted;
 
 const fundamentals = document.querySelector('.fundamentals');
 fundamentals.textContent += `${fundamentalsCompleted}/${totalFundamentals} 
-(${(fundamentalsCompleted/totalFundamentals).toFixed(3)*100}%)`;
+(${((fundamentalsCompleted/totalFundamentals)*100).toFixed(1)}%)`;
 
 const fullstackJS = document.querySelector('.fullstackJS');
 fullstackJS.textContent += `${FullStackJSCompleted}/${totalFullStackJS} 
-(${(FullStackJSCompleted/totalFullStackJS).toFixed(3)*100}%)`;
+(${((FullStackJSCompleted/totalFullStackJS)*100).toFixed(1)}%)`;
 
 const intermediateHTMLandCSS = document.querySelector('.li1');
 intermediateHTMLandCSS.textContent += `${intermediateHTMLandCSSCompleted}/${totalIntermediateHTMLandCSSLessons} 
-(${(intermediateHTMLandCSSCompleted/totalIntermediateHTMLandCSSLessons).toFixed(3)*100}%)`;
+(${((intermediateHTMLandCSSCompleted/totalIntermediateHTMLandCSSLessons)*100).toFixed(1)}%)`;
 
 const JavaScript = document.querySelector('.li2');
-JavaScript.textContent += `${JSCompleted}/${totalJS} (${(JSCompleted/totalJS).toFixed(3)*100}%)`;
+JavaScript.textContent += `${JSCompleted}/${totalJS} (${((JSCompleted/totalJS)*100).toFixed(1)}%)`;
 
 const advancedHTMLandCSS = document.querySelector('.li3');
 advancedHTMLandCSS.textContent += `${advancedHTMLandCSSCompleted}/${totalAdvancedHTMLandCSS} 
-(${(advancedHTMLandCSSCompleted/totalAdvancedHTMLandCSS).toFixed(3)*100}%)`;
+(${((advancedHTMLandCSSCompleted/totalAdvancedHTMLandCSS)*100).toFixed(1)}%)`;
 
 const nodeJS = document.querySelector('.li4');
 nodeJS.textContent += `${nodeJSCompleted}/${totalNodeJS} 
-(${(nodeJSCompleted/totalNodeJS).toFixed(3)*100}%)`;
+(${((nodeJSCompleted/totalNodeJS)*100).toFixed(1)}%)`;
 
 const gettingHired = document.querySelector('.li5');
 gettingHired.textContent += `${gettingHiredCompleted}/${totalGettingHired} 
-(${(gettingHiredCompleted/totalGettingHired).toFixed(3)*100}%)`;
+(${((gettingHiredCompleted/totalGettingHired)*100).toFixed(1)}%)`;
 
 const total = document.querySelector('.total');
-total.textContent += `${totalCompleted}/${totalLessons} (${(totalCompleted/totalLessons).toFixed(3)*100}%)`;
+total.textContent += `${totalCompleted}/${totalLessons} (${((totalCompleted/totalLessons)*100).toFixed(1)}%)`;
 
 const daysLeft = document.querySelector('.days-left');
 daysLeft.textContent += `Approximately ${(totalRemaining / 2).toFixed(0)} days left (2/d)`;
