@@ -1,7 +1,7 @@
 
 const fundamentalsCompleted = 47;
 const totalFundamentals = 47;
-const intermediateHTMLandCSSCompleted = 12;
+const intermediateHTMLandCSSCompleted = 17;
 const totalIntermediateHTMLandCSSLessons = 23;
 const JSCompleted = 0;
 const totalJS = 40;
