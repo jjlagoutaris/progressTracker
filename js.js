@@ -1,9 +1,9 @@
 
-const fundamentalsCompleted = 47;
-const totalFundamentals = 47;
+const fundamentalsCompleted = 48;
+const totalFundamentals = 48;
 const intermediateHTMLandCSSCompleted = 23;
 const totalIntermediateHTMLandCSSLessons = 23;
-const JSCompleted = 4;
+const JSCompleted = 6;
 const totalJS = 40;
 const advancedHTMLandCSSCompleted = 0;
 const totalAdvancedHTMLandCSS = 16;
