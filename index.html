@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Progress Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14ceef9952.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="progress.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <h1 class="header">Odin Course Progress</h1>
-        <div class="fundamentals">Fundamentals - </div>
-        <div class="fullstackJS">Fullstack JavaScript -  
-        </div>
-        <ul>
+        <h1 class="header containerElem">Odin Course Progress</h1>
+        <div class="fundamentals containerElem">Fundamentals - </div>
+        <div class="fullstackJS containerElem">Fullstack JavaScript - </div>
+        <ul class="containerElem">
             <li class="li1">Intermediate HTML & CSS - </li>
             <li class="li2">JavaScript - </li>
             <li class="li3">Advanced HTML & CSS - </li>
             <li class="li4">NodeJS - </li>
             <li class="li5">Getting Hired - </li>
         </ul>
-        <div class="total">Total Progress: </div>
-        <div class="days-left">Days remaining: </div>
+        <div class="total containerElem">Total Progress: </div>
+        <div class="days-left containerElem">Days remaining: </div>
+        
+        <button class="btn btn-background-circle" data-update-button>UPDATE</button>
     </div>
     
     <script src="js.js"></script>

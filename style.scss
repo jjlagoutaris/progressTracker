@@ -1,0 +1,183 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+
+  --background-color: white;
+  --container-color: #f0f0f4;
+  --form-color: yellow;
+  --off-color: lightblue;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--container-color);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+  padding: 25px;
+
+}
+h1{
+  font-size: 4rem;
+}
+.fundamentals, .fullstackJS, 
+.total, .days-left, ul{
+  font-size: 2rem;
+  background-color: var(--off-color);
+  border: 5px solid black;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+}
+ul, .fullstackJS{
+  font-size: 1.5rem;
+}
+.fullstackJS{
+  font-size: 2rem;
+}
+li{
+  margin: 10px;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+li:nth-child(even){
+  background-color: var(--container-color);
+}
+li:nth-child(odd){
+  background-color: lightgreen;
+}
+
+/* Button */
+.btn {
+color: #222;
+padding: 1rem 2rem;
+border: none;
+outline: none;
+position: relative;
+cursor: pointer;
+border-radius: 5px;
+font-size: 1.2rem;
+
+--background-color: #efefef;
+--border-size: 2px;
+--accent-color: #fe3fe3;
+}
+
+.btn.btn-background-circle::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1;
+background-color: lightgreen;
+border-radius: 50%;
+transition: transform 500ms ease-in-out;
+
+transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+transform: scale(0);
+}
+
+.btn.btn-background-circle {
+z-index: 1;
+overflow: hidden;
+background-color: var(--accent-color);
+transition: color 500ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+color: white;
+}
+
+/* Edit Modal */
+
+#editModal{
+
+  margin: auto auto;
+  max-width: 100ch;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: salmon;
+
+  h2{
+      letter-spacing: 5px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bolder;
+  }
+
+  .editForm{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 400px;
+      height: 600px;
+
+      label, input[type="text"], .btns{
+          letter-spacing: 1px;
+          width: 200px;
+          font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+  
+      input[type="text"]{
+          padding: 5px;
+      }
+  
+      .btns{
+          gap: 5px;
+          .cancelEditBtn, .submitEditBtn
+          {
+              background-color: greenyellow;
+              max-width: 50px;
+              padding: 10px;
+              &:hover{
+                  cursor: pointer;
+                  background-color: white;
+              }
+          }
+          .cancelEditBtn{
+              background-color: red;
+          }
+      }
+  }
+
+  & > * {
+  margin: 0 0 0.5rem 0;
+  }
+  &::backdrop{
+    background-color: black;
+    opacity: .75;
+  }
+
+}
