@@ -2,13 +2,13 @@ const fundamentalsCompleted = 48;
 const totalFundamentals = 48;
 const intermediateHTMLandCSSCompleted = 23;
 const totalIntermediateHTMLandCSSLessons = 23;
-let JSCompleted = 13;
+let JSCompleted = 18;
 const totalJS = 44;
-let advancedHTMLandCSSCompleted = 0;
+let advancedHTMLandCSSCompleted = 6;
 const totalAdvancedHTMLandCSS = 16;
 let nodeJSCompleted = 0;
 const totalNodeJS = 24;
-let gettingHiredCompleted = 2;
+let gettingHiredCompleted = 9;
 const totalGettingHired = 13;
 
 const totalFullStackJS = totalIntermediateHTMLandCSSLessons+totalJS+totalAdvancedHTMLandCSS+
