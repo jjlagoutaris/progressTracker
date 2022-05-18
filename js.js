@@ -1,14 +1,15 @@
+// values as of May 18th 2022
 const fundamentalsCompleted = 48;
 const totalFundamentals = 48;
 const intermediateHTMLandCSSCompleted = 23;
 const totalIntermediateHTMLandCSSLessons = 23;
-let JSCompleted = 18;
+let JSCompleted = 26;
 const totalJS = 44;
-let advancedHTMLandCSSCompleted = 6;
+let advancedHTMLandCSSCompleted = 16;
 const totalAdvancedHTMLandCSS = 16;
-let nodeJSCompleted = 0;
+let nodeJSCompleted = 1;
 const totalNodeJS = 24;
-let gettingHiredCompleted = 9;
+let gettingHiredCompleted = 11;
 const totalGettingHired = 13;
 
 const totalFullStackJS = totalIntermediateHTMLandCSSLessons+totalJS+totalAdvancedHTMLandCSS+
