@@ -1,6 +1,6 @@
-// values as of May 18th 2022
-const fundamentalsCompleted = 48;
-const totalFundamentals = 48;
+// values as of July 11th 2022
+const fundamentalsCompleted = 49;
+const totalFundamentals = 49;
 const intermediateHTMLandCSSCompleted = 23;
 const totalIntermediateHTMLandCSSLessons = 23;
 let JSCompleted = 26;
